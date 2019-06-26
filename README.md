@@ -81,16 +81,13 @@ EDA was developed for Linux-based systems. The installation process described be
 The following literature resources have been implemented, tested, and are available in the EDA:
 
 * Seven features extractors: Color Layout, Color Structure, Dominant Color, Edge Histogram, Haralick, Local Binary Pattern, and Scalable Color.
-<br/>
 
 * Five distance functions: Bray-Curtis, Canberra, Chebyshev, Euclidean and Manhatan.
-<br/>
 
 * Seven query algorithms (with or without diversity): Better Result with Influence Diversification (BRIDk), First Match (FM), Greedy Marginal Contribution (GMC), k-Nearest Neighbors Query (kNNq), Maximal Marginal Relevance (MMR), Relative Grouping based on Influence (ReGi) and Range Query (Rq).
-<br/>
 
 * Three Relevance Feedback (RF) techniques: Query Point Movement, Vector Support Machine and Similarity Refinement Evaluator.
-<br/>
+
 * Six Evaluation Metrics: Precision and Revocation, Average Average Precision - mAP, Average Recall - AR, Number of Relevant and Irrelevant Images by Iteration and Search Execution Time and RF Technique.
 
 
@@ -109,9 +106,7 @@ Query parameters may differ depending on the query algorithm. To facilitate the 
 **2.5 Datasets Settings**
 When starting EDA for the first time, it will be necessary to configure at least one of the datasets that will be used. EDA allows this to be done in two ways:
 
-  
   1. The system is in charge of generating the features of the images of the dataset, being the responsibility of the user to inform the name of the dataset and the directory where the images are.
-<br/>
 
   2. You can use features generated externally to the system. In this case, it is necessary to inform the name of the dataset, the name of the feature extractor used, the directory of the images and a file (.txt) that contains the extracted features. This file must be in this [format](./Corel_Colorhist.txt):
 
@@ -140,6 +135,7 @@ Initially, it is necessary to load a query image, select a dataset, a distance f
 * After labeling images as relevant and / or irrelevant, the user can select an RF technique and click on "Relevance Feedback" to feed the system. A new search will be performed and its result will be displayed.
 
 **2.7 Experment Module - Supervised Feedback:**
+
 The Experiment Module - Feedback Supervised allows the user to evaluate the quality of the retrieval process by performing multiple searches with the same RF configuration and technique but with different query images. The configuration of this module is similar to that of the exploratory module, the main difference is that it allows loading more than one query image. In addition, this is a module of experiments, so for each iteration information such as the execution time of the search algorithm, RF technique and the amount of relevant and irrelevant images retrieved, are saved and can be used in later analyzes.
 
 Before starting the experiment, it is necessary to load the query image, select a dataset, a distance function, a characteristic extractor, a search algorithm, define the search parameters and then start the experiment. At this point, the result of a search using the first query image is displayed, the user can then label the images and re-feed the system or execute a new search using if it exists, the next query image. During the experiment the user can:
@@ -188,7 +184,7 @@ Because of the automatic evaluation, the system requires a parameter that indica
 The automatic experiment process works as follows:
 
   1. The first query image listed is used to perform a search, the result of that search is converted into a list with the name of the retrieved images.
-<br/>  
+
   
   2. From this list, the evaluation of the images is done, being verified if the class of recovered images is the same as the image of the query. If yes, the image is marked as relevant, otherwise, the image is marked as irrelevant.
 <br/>  
