@@ -60,8 +60,6 @@ EDA was developed for Linux-based systems. The installation process described be
 
 6 directories, 1012 files 
 ```
-
-
 **2.2 Run**
   The run file is run.sh. Initially it is necessary to make this file an execult, for this use the command: chmod + x run.sh and to execute use: ./run.sh.
 
@@ -97,11 +95,11 @@ Query parameters may differ depending on the query algorithm. To facilitate the 
 
 * Better Result with Influence Diversification (BRIDk), k-Nearest Neighbors Query (kNNq) and Relative Grouping based on Influence (ReGi): Expect an integer (k) that indicates the number of images that should be returned.
 
-* First Match (FM): It waits for an integer (k) that indicates the number of images that must be returned and a number >= 0 that indicates the minimum separation distance between the elements.
+* First Match (FM): It waits for an integer (k) that indicates the number of images that must be returned and a number >= 0, that indicates the minimum separation distance between the elements.
 
 * Greedy Marginal Contribution (GMC) and Maximal Marginal Relevance (MMR): It expects an integer (k) that indicates the number of images to be returned, a value in the interval [0; 1] that indicates the diversity preference of the user, and an integer that indicates the proportion of images that should be used during the optimization phase.
 
-* Range Query (Rq): It waits for a number > 0 that indicates the maximum distance threshold.
+* Range Query (Rq): It waits for a number > 0, that indicates the maximum distance threshold.
 
 **2.5 Datasets Settings**
 When starting EDA for the first time, it will be necessary to configure at least one of the datasets that will be used. EDA allows this to be done in two ways:
@@ -112,7 +110,7 @@ When starting EDA for the first time, it will be necessary to configure at least
 
       * Number of images.
       * Number of features.
-      * The other lines must contain the features separated by; and end up as the name of the image to which the features belong.
+      * The other lines must contain the features separated by ";" and end up as the name of the image to which the features belong.
 
 When you complete the settings, the user must save the changes made. At this point, a loading screen will appear, wait until the process is finished. When this happens, a button to go to the main EDA interface will appear.
 
@@ -129,7 +127,7 @@ Initially, it is necessary to load a query image, select a dataset, a distance f
 
 * Double click on an image, right click the image as relevant and with the left button labels the image as irrelevant.
 
-* After labeling images as relevant and / or irrelevant, the user can select an RF technique and click on "Relevance Feedback" to feed the system. A new search will be performed and its result will be displayed.
+* After labeling images as relevant and/or irrelevant, the user can select an RF technique and click on "Relevance Feedback" to feed the system. A new search will be performed and its result will be displayed.
 
 **2.7 Experment Module - Supervised Feedback:**
 
