@@ -57,7 +57,7 @@ EDA was developed for Linux-based systems. The installation process described be
 
 The following literature resources have been implemented, tested, and are available in the EDA:
 
-* Seven features extractors: Color Layout, Color Structure, Color Story, Edge Histogram, Haralick, Local Binary Pattern, and Scalable Color.
+* Seven features extractors: Color Layout, Color Structure, Dominant Color, Edge Histogram, Haralick, Local Binary Pattern, and Scalable Color.
 <br/>
 
 * Five distance functions: Bray-Curtis, Canberra, Chebyshev, Euclidean and Manhatan.
