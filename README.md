@@ -219,6 +219,6 @@ All the externally generated features that are available to the system will appe
 
 ### 3. Additional Information and Legal Note ####
 
-The demonstration binary file is under GPLv2 restrictions due to free use of [JAVA](http://openjdk.java.net/legal/) requirements.
+The demonstration binary file is under GPLv2 restrictions due to free use of [Java](http://openjdk.java.net/legal/) requirements.
 
 This repository contains a demonstration, any express or implied warranties, including without limitation the implied warranties of merchantability and fitness for a particular purpose are waived. Under no circumstances will the authors of this software or its contributors be liable for any direct, indirect, incidental, special, exemplary or consequential damages (including, but not limited to, acquiring substitute goods or services, loss of use, data or profits, or business interruption), but caused and in any theory of liability in the contract, objective liability or unlawful act (including negligence or otherwise) arising in any way in the use of this statement, even if advised of the possibility of such damage.
