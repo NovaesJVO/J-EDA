@@ -15,7 +15,8 @@ Despite the authors' efforts to release the prototypes without errors, there may
 * 2 GB RAM.
 * Intel Core™2 Duo P8600 core processor.
 * Java JDK 8 (or higher)
-### 2. Usando o EDA ###
+
+### 2. Using EDA ###
 
 EDA was developed for Linux-based systems. The installation process described below has been tested on a [Ubuntu 18.04](http://releases.ubuntu.com/18.04/), For other distributions based on Ubuntu the operation may be similar, but it may be necessary to install some packages manually and, to date, other Linux distributions have not been tested.
 
