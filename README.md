@@ -31,7 +31,7 @@ EDA was developed for Linux-based systems. The installation process described be
 * The following files must be in the directory:
 
 ```
-    EDA
+  EDA
     ├── Corel1000
     │   ├── 0.jpg
     │   ├── ...
@@ -44,14 +44,12 @@ EDA was developed for Linux-based systems. The installation process described be
     │   │   ├── jfreechart-1.0.19.jar
     │   │   └── opencv-400.jar
     │   └── Projeto.jar
-    ├── Figures
-    │   └── ...
     ├── lib
     │   └── libopencv_java400.so
     ├── README.md
     └── run.sh
-    
-    4 directories, 1012 files
+
+    3 directories, 1012 files    
 ```
 
 **Query Parameters**
@@ -75,7 +73,7 @@ The following literature resources have been implemented, tested, and are availa
 **2.3 Run**
   The run file is run.sh. Initially it is necessary to make this file an execult, for this use the command: chmod + x run.sh and to execute use: ./run.sh.
 
-  In the first run it may be necessary to install some packages: ** [libjasper1 libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev execstack] **, in this case, the root password can be requested.
+  In the first run it may be necessary to install some packages: **[libjasper1 libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev execstack]**, in this case, the root password can be requested.
 
 
 ### 3. Additional Information and Legal Note ####

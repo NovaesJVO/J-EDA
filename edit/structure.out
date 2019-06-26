@@ -1,0 +1,19 @@
+EDA
+├── Corel1000
+│   ├── 0.jpg
+│   ├── ...
+│   └── 999.jpg
+├── Corel_class.txt
+├── Corel_Colorhist.txt
+├── dist
+│   ├── lib
+│   │   ├── jcommon-1.0.23.jar
+│   │   ├── jfreechart-1.0.19.jar
+│   │   └── opencv-400.jar
+│   └── Projeto.jar
+├── lib
+│   └── libopencv_java400.so
+├── README.md
+└── run.sh
+
+3 directories, 1012 files
