@@ -1,0 +1,497 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/jvictor/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.4.2/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="the-eda-project">The EDA Project</h1>
+
+<p><strong>Aten&#xE7;&#xE3;o</strong>: EDA <strong>n&#xE3;o</strong> &#xE9; um software clinico ou comercial. Ele &#xE9; desenvolvido para fins educacionais e de demonstra&#xE7;&#xE3;o.</p>
+<p>EDA, &#xE9; um sistema que permite ao usu&#xE1;rio analisar os resultados gerados por diferentes abordagens de busca por similaridade com diversidade. O sistema, utiliza t&#xE9;cnicas de RF para incluir o usu&#xE1;rio no processo de recupera&#xE7;&#xE3;o, de forma que ele possa, iterativamente, avaliar os resultados gerados e ajustar o processo &#xE0; sua inten&#xE7;&#xE3;o, sem que seja necessario reformular a busca.</p>
+<p>Ele foi implementado em <a href="https://www.oracle.com/technetwork/pt/java/javase/downloads/index.html">Java</a>, com o auxilio das bibliotecas <a href="https://opencv.org/opencv-4-0/">OpenCV 4</a> e <a href="http://www.jfree.org/jfreechart/index.html">JFreeChart</a>.</p>
+<p>Apesar dos esfor&#xE7;os dos autores para liberar o prototipos sem erros, pode haver alguns problemas. Caso voc&#xEA; encontre algum problema ou deseje adicionar novos recursos, por favor entre em contato.</p>
+<p><strong>Cita&#xE7;&#xE3;o</strong>: Se voc&#xEA; baixar ou utilizar EDA para testes ou anilises t&#xE9;cnicas, nos pedimos que inclua a seguinte refer&#xEA;ncia;</p>
+<ul>
+<li>Novaes, J.V.O; Santos, L. F. D; Traina, A.; Traina Jr., C; Bedo, M. V. N. SBBD 2019 Proceedings Satellite Events of the 34th Brazilian Symposium on Databases (SBBD) 2019: Pagina_Inicio-Pagina_Fim. Cear&#xE1;, Brazil, October 7-10, 2019.</li>
+</ul>
+<p>See DOI link <a href="https://doi.org/">here</a>.</p>
+<h3 class="mume-header" id="1-requisitos-minimos">1. Requisitos Minimos</h3>
+
+<ul>
+<li>Screen resolution: 1280&#xD7;800 (or higher)</li>
+<li>200 MB free disk space (Para a instala&#xE7;&#xE3;o!).</li>
+<li>2 GB RAM.</li>
+<li>Intel Core&#x2122;2 Duo P8600 core processor.</li>
+<li>Java JDK 8 (or higher)</li>
+</ul>
+<h3 class="mume-header" id="2-usando-o-eda">2. Usando o EDA</h3>
+
+<p>EDA foi desenvolvido para sistemas baseados no Linux. O processo de instala&#xE7;&#xE3;o descrito abaixo foi testado em um sistema <a href="http://releases.ubuntu.com/18.04/">Ubuntu 18.04</a>, para outras distribui&#xE7;&#xF5;es baseadas no Ubuntu o funcionamento pode ser parecido, mas pode ser necessario instalar manualmente alguns pacotes e, at&#xE9; o presente momento n&#xE3;o foram testadas outras disbui&#xE7;&#xF5;es do Linux.</p>
+<p><img src="./Figures/Main.png" alt="Main"></p>
+<p>O seguinte <a href="http://youtube.com">v&#xED;deo</a> apresenta de forma generica as funcionalidades do sistema.</p>
+<p><strong>2.1 Download</strong></p>
+<ul>
+<li>Clone ou baixe o diretorio <a href="https://github.com/NovaesJVO/EDA">master</a> desse projeto.</li>
+<li>Se necessario descompacte o arquivo baixado.</li>
+<li>Os seguintes arquivos devem estar no diretorio:</li>
+</ul>
+<pre data-role="codeBlock" data-info class="language-"><code>    EDA
+    &#x251C;&#x2500;&#x2500; Corel1000
+    &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; 0.jpg
+    &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; ...
+    &#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; 999.jpg
+    &#x251C;&#x2500;&#x2500; Corel_class.txt
+    &#x251C;&#x2500;&#x2500; Corel_Colorhist.txt
+    &#x251C;&#x2500;&#x2500; dist
+    &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; lib
+    &#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; jcommon-1.0.23.jar
+    &#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; jfreechart-1.0.19.jar
+    &#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; opencv-400.jar
+    &#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; Projeto.jar
+    &#x251C;&#x2500;&#x2500; Figures
+    &#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; ...
+    &#x251C;&#x2500;&#x2500; lib
+    &#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; libopencv_java400.so
+    &#x251C;&#x2500;&#x2500; README.md
+    &#x2514;&#x2500;&#x2500; run.sh
+    
+    4 directories, 1012 files
+</code></pre><p><strong>Query Parameters</strong><br>
+<strong>2.2 Resources</strong></p>
+<p>O seguinte recursos da literatura foram implementados, testados e, est&#xE3;o disponiveis no EDA:</p>
+<ul>
+<li>
+<p>Sete extratores de caracteristicas: Color Layout, Color Structure, Dominant Color, Edge Historam, Haralick,Local Binary Pattern and Scalable Color.<br>
+<br></p>
+</li>
+<li>
+<p>Cinco fun&#xE7;&#xF5;es de dist&#xE2;ncia: Bray-Curtis, Canberra, Chebychev, Euclidean and Manhatan.<br>
+<br></p>
+</li>
+<li>
+<p>Sete algoritmos de busca por similaridade (com ou sem diversidade): Better Result with Influence Diversification (BRIDk), First Match (FM), Greedy Marginal Contribution (GMC), k-Nearest Neighbors Query (k-NNq), Maximal Marginal Relevance (MMR), Relative Grouping based on Influence (ReGi) and Range Query (Rq).<br>
+<br></p>
+</li>
+<li>
+<p>Tr&#xEA;s t&#xE9;cnicas de Realimenta&#xE7;&#xE3;o de Relev&#xE2;ncia: Query Point Moviment, Support Vector Machine and Similarity Refinament Evaluator.<br>
+<br></p>
+</li>
+<li>
+<p>Seis M&#xE9;tricas de Avalia&#xE7;&#xE3;o: Precis&#xE3;o e Revoca&#xE7;&#xE3;o, mean Average Precision - mAP, Average Recall - AR, Numero de Imagens relevantes e Irrelevantes por itera&#xE7;&#xE3;o e Tempo de Execu&#xE7;&#xE3;o da busca e da t&#xE9;cnica de RF.</p>
+</li>
+</ul>
+<p><strong>2.3 Run</strong><br>
+O arquivo de execu&#xE7;&#xE3;o &#xE9; o <a href="http://run.sh">run.sh</a>. Inicialmente &#xE9; necess&#xE1;rio tornar este arquivo um execultavel, para isso utilize o comando: chmod +x <a href="http://run.sh">run.sh</a> e, para execultar utilize: ./run.sh.</p>
+<p>Na primeira execu&#xE7;&#xE3;o pode ser necessario instalar alguns pacotes: <strong>Listar Quais S&#xE3;o?</strong>, neste caso, a senha de administrador (root) pode ser solicitada.</p>
+<p><strong>2.4 Datasets Settings</strong></p>
+<p>Ao iniciar o EDA pela primeira vez, ser&#xE1; necessario configurar, pelo menos, um dos datasets que ser&#xE3;o utilizados. EDA permite que isso seja feito de duas formas:</p>
+<p><img src="./Figures/Dataset.png" alt="Dataset"></p>
+<ol>
+<li>
+<p>O Sistema se encarrega de gerar as carcteristicas das imagens do dataset, cabendo ao usu&#xE1;rio informar o nome do dataset e o diretorio onde as imagens se encontram.<br>
+<br></p>
+</li>
+<li>
+<p>Pode-se utilizar caracteristicas geradas de forma externa ao sistema. Neste caso, ser&#xE1; necessario informar o nome do dataset, o nome do extrator de caracteristicas utilizado, o diretorio das imagens e, um arquivo (.txt) que cont&#xE9;m as caracteristicas de extraidas. Este arquivo deve estar neste <a href="./Corel_Colorhist.txt">formato</a>:</p>
+<ul>
+<li>Quantidade de imagens.</li>
+<li>Numero de features.</li>
+<li>As demais linhas devem conter as caracteristicas separadas por ; e terminar como o nome da imagem a qual as caracteristicas pertencem.</li>
+</ul>
+</li>
+</ol>
+<p>Ao concluir as configura&#xE7;&#xF5;es, o usu&#xE1;rio deve salvar as modifica&#xE7;&#xF5;es feitas. Neste momento, uma tela de loading ir&#xE1; aparecer, aguarde at&#xE9; que o processo seja finalizado. Quando isso acontecer, um bot&#xE3;o para ir at&#xE9; a interface principal do EDA ir&#xE1; aparecer.</p>
+<p><strong>2.5 Explorer Module:</strong></p>
+<p>O Explorer Module, &#xE9; o primeiro a aparecer na interface principal, ele foi projetado para permitir que algumas funcionalidades do sistema possam ser testadas antes de e realizar algum tipo de experimento.</p>
+<p><img src="./Figures/Main.png" alt="Main"></p>
+<p>Inicialmente, &#xE9; necessario carregar uma imagem de consulta,  selecionar um dataset, uma fun&#xE7;&#xE3;o de dist&#xE2;ncia, um extrator de caracteristicas, um algoritmo de busca, definir os parametros da busca e, ent&#xE3;o execultar a consulta. Depois de execultar a consulta, o sistema exibe o conjunto resultado na tela de visualiza&#xE7;&#xE3;o e mostra uma tela de sele&#xE7;&#xE3;o da t&#xE9;cnica de RF. A partir disso, o usu&#xE1;rio pode:<br>
+<br></p>
+<ul>
+<li>
+<p>Clicar sobre uma das imagens recuperadas com o bat&#xE3;o direito, enquanto mant&#xE9;m a tecla Shift pressionada, abre uma tela de exibi&#xE7;&#xE3;o contendo a imagem. Caso o algoritmo de busca utilizado seja o ReGi, ser&#xE1; utilizada a funcionalidade Group Viewer (2.6), essa funcionalidade exibe todas as imagens agrupadas com uma das imagens representativas recuperadas.<br>
+<br></p>
+</li>
+<li>
+<p>Clicar sobre as imagens recuperadas com o bot&#xE3;o direito, enquanto mant&#xE9;m o tecla Ctrl pressionada, seleciona as imagens, que podem ser exibidas na tela de visualiza&#xE7;&#xE3;o ao clicar em &quot;Show Selected Imagens&quot;.<br>
+<br></p>
+</li>
+<li>
+<p>Clicar duas vezes em uma imagem, com o bot&#xE3;o direito do mouse rotula a imagem como relevante e com o bot&#xE3;o esquerdo rotula a imagem como irrelevante.<br>
+<br></p>
+</li>
+<li>
+<p>Depois de rotular imagens como relevantes e/ou irrelevantes, o usu&#xE1;rio pode selecionar uma t&#xE9;cnica de RF e clicar em &quot;Relevance Feedback&quot;, para realimentar o sistema. Uma nova busca ser&#xE1; executada e, o seu resultado ser&#xE1; exibido.</p>
+</li>
+</ul>
+<p><strong>2.6 Experment Module - Supervised Feedback:</strong></p>
+<p>O Experment Module - Feedback Supervised, permite ao usu&#xE1;rio avaliar a qualidade do processo de recupera&#xE7;&#xE3;o, executando v&#xE1;rias buscas, com a mesma configura&#xE7;&#xE3;o e t&#xE9;cnica de RF, mas com imagens de consulta diferentes. A configura&#xE7;&#xE3;o deste modulo &#xE9; similar ao do modulo exploratorio, a principal diferen&#xE7;a, &#xE9; que ele permite carregar mais de uma imagem de consulta. Al&#xE9;m disso, este &#xE9; um modulo de experimentos, logo, a cada itera&#xE7;&#xE3;o informa&#xE7;&#xF5;es como: o tempo de execu&#xE7;&#xE3;o do algoritmo de busca, t&#xE9;cnica de RF e a quantidade de imagens relevantes e irrelevantes recuperadas, s&#xE3;o salvas e podem ser utilizadas em analises posteriores.</p>
+<p>Ao iniciar o experimento, o resultado de uma busca utilizando a primeira imagem de consulta &#xE9; exibido, o usu&#xE1;rio pode ent&#xE3;o, rotular as imagens e realimentar o sistema ou execultar uma nova busca utilizando, se existir, a proxima imagem consulta.<br>
+<br></p>
+<ul>
+<li>
+<p>A qualquer momento o usu&#xE1;rio pode finalizar o experimento e, neste caso, todas as informa&#xE7;&#xF5;es obtidas, s&#xE3;o salvas.<br>
+<br></p>
+</li>
+<li>
+<p>Clicar sobre uma das imagens recuperadas com o bat&#xE3;o direito, enquanto mant&#xE9;m a tecla Shift pressionada, abre uma tela de exibi&#xE7;&#xE3;o contendo a imagem. Caso o algoritmo de busca utilizado seja o ReGi, ser&#xE1; utilizada a funcionalidade Group Viewer (2.6), essa funcionalidade exibe todas as imagens agrupadas com uma das imagens representativas recuperadas.<br>
+<br></p>
+</li>
+<li>
+<p>Clicar sobre as imagens com o bot&#xE3;o direito, enquanto mant&#xE9;m a tecla Ctrl pressionada, seleciona as imagens, que podem ser exibidas na tela de visualiza&#xE7;&#xE3;o ao clicar em &quot;Show Selected Imagens&quot;.<br>
+<br></p>
+</li>
+<li>
+<p>Clicar duas vezes em uma imagem, com o bot&#xE3;o direito do mouse rotula a imagem como relevante e com o bot&#xE3;o esquerdo rotula a imagem como irrelevante.<br>
+<br></p>
+</li>
+<li>
+<p>Ap&#xF3;s rotular as imagens, o usu&#xE1;rio pode cliclar em &quot;Relevance Feedback&quot; para realimenta o sistema. Uma nova busca ser&#xE1; executada e o seu resultado ser&#xE1; exibido.</p>
+</li>
+</ul>
+<p><strong>2.7 Group Viewer:</strong><br>
+Est&#xE1; funcionalidade, permite visualizar como o agrupamento gerado pelo ReGi est&#xE1; sendo gerado.</p>
+<p>Ao utilizar o algoritmo de busca ReGi e, clicar sobre uma das imagens recuperadas com o bot&#xE3;o direito enquanto preciona a tecla Shift, a interface dessa funcionalidade ser&#xE1; exibida. Todas as imagens agrupadas ser&#xE3;o exibidas em uma lista, ao clicar sobre uma das imagens da lista ela ser&#xE1; exibida, no centro da interface, em tamanho maior. Caso, o usu&#xE1;rio deseje visualizar a imagem em tamanho real, basta clicar duas vezes com o bot&#xE3;o direito sobre a imagem no centro da interface. Para facilitar a intera&#xE7;&#xE3;o do usu&#xE1;rio, as imagens na lista s&#xE3;o carregadas de 10 em 10, caso seja necessario carregar mais imagens basta cliclar em &quot;Load More&quot; e, caso existam mais imagens a serem carregadas, novas 10 imagens ser&#xE3;o adicionadas a lista.</p>
+<p><strong>2.8 Experment Module - Unsurpervised Feedback:</strong></p>
+<p>O objetivo desse modulo &#xE9; similar ao de Supervised Feedback, a principal diferen&#xE7;a &#xE9; que o processo de avalia&#xE7;&#xE3;o das imagens &#xE9; feito de forma autom&#xE1;tica. De maneira an&#xE1;loga, essa modulo permite configurar a busca e selecionar a t&#xE9;cnica de realimenta&#xE7;&#xE3;o, mas permite que o usu&#xE1;rio selecione as imagens que ser&#xE3;o utilizadas durante os testes de tr&#xEA;s formas: aleat&#xF3;ria, via script ou sele&#xE7;&#xE3;o manual:</p>
+<ul>
+<li>
+<p>Sele&#xE7;&#xE3;o Aleat&#xF3;ria: o usu&#xE1;rio precisa informar o diret&#xF3;rio das imagens que ser&#xE3;o utilizadas no experimento e o n&#xFA;mero de imagens que devem ser selecionadas, a partir disso, o sistema escolhe aleatoriamente as imagens na quantidade de informada. Para permitir que os resultados gerados pela sele&#xE7;&#xE3;o aleat&#xF3;ria possam ser replicados, o sistema gera um script, que permite re-executar o experimento.<br>
+<br></p>
+</li>
+<li>
+<p>Sele&#xE7;&#xE3;o via script: &#xE9; necessario selecionar selecionar um arquivo que cont&#xE9;m a configura&#xE7;&#xE3;o de busca, a t&#xE9;cnica de RF e, uma lista com os caminhos de diret&#xF3;rio de cada uma das imagens.<br>
+<br></p>
+</li>
+<li>
+<p>Sele&#xE7;&#xE3;o manual: o usu&#xE1;rio tem que selecionar manualmente cada uma das imagens que ser&#xE3;o utilizadas (similar ao modulo de Supervised Feedback).</p>
+</li>
+</ul>
+<p>O processo de avali&#xE7;&#xE3;o autom&#xE1;tica, considera que uma imagem recuperada &#xE9; relevante, se ela for da mesma classe da imagem de busca, caso contrario a imagem &#xE9; irrelevante, dessa forma, o usu&#xE1;rio precisa informar ao sistema qual &#xE9; a classe das imagens fornecidas (busca e dataset). EDA, permite que a classe das imagens sejam fornecidas de duas formas: via arquivo de classes ou via r&#xF3;tulo das imagens.</p>
+<ul>
+<li>Arquivo de classes: &#xE9; esperado um arquivo que cont&#xE9;m o nome de todas as imagens, tal que, cada linha possua o nome de uma imagem e o identificador da classe a qual a imagem pertence, <a href="./Corel_class.txt">por exemplo</a>.</li>
+</ul>
+<br>  
+<ul>
+<li>R&#xF3;tulo das imagens: &#xE9; esperado que cada imagem tenha no seu nome de arquivo esperado que cada imagem tenha no seu nome de arquivo a classe a qual pertence, por exemplo: &quot;01_img2.jpg&quot;, neste caso, temos que a imagem img2.jpg pertence a classe 01.</li>
+</ul>
+<p>Por conta da avalia&#xE7;&#xE3;o autom&#xE1;tica, o sistema necessita de um par&#xE2;metro que indique o n&#xFA;mero m&#xE1;ximo de itera&#xE7;&#xF5;es (query and feedback) que podem se realizadas em cada uma das buscas, pois sem este par&#xE2;metro, o sistema poderia executar infinitas itera&#xE7;&#xF5;es e nunca finalizar o teste. Logo, antes de iniciar um experimento o sistema solicita que o usu&#xE1;rio informe o n&#xFA;mero m&#xE1;ximo de itera&#xE7;&#xF5;es.</p>
+<p>O processo de experimento automatico, funciona da seguinte maneira:</p>
+<ol>
+<li>
+<p>A primeira imagem de consulta listada, &#xE9; utilizada para executar uma busca, o resultado dessa busca &#xE9; convertido em uma lista com o nome das imagens recuperadas.<br>
+<br></p>
+</li>
+<li>
+<p>A partir dessa lista, &#xE9; feita a avalia&#xE7;&#xE3;o das imagens, sendo verificado se a classe das imagens recuperadas &#xE9; a mesma da imagem de consulta. Se sim, a imagem &#xE9; marcada como relevante, se n&#xE3;o, a imagem &#xE9; marcada como irrelevante.<br>
+<br></p>
+</li>
+<li>
+<p>Em seguida, a t&#xE9;cnica de RF &#xE9; aplicada e uma nova busca &#xE9; efetuada.<br>
+<br></p>
+</li>
+<li>
+<p>Repete-se o segundo e terceiro passo at&#xE9; que o n&#xFA;mero m&#xE1;ximo de itera&#xE7;&#xF5;es tenha sido alcan&#xE7;ado. Quando isso ocorre, uma nova imagem de consulta &#xE9; utilizada e repete-se o processo a partir do inicio. Caso n&#xE3;o existam mais imagens de consulta, o processo se encerra e o sistema salva os resultados do teste.</p>
+</li>
+</ol>
+<p><strong>2.9 Result Analysis:</strong></p>
+<p>Esta interface, permite, por meio de metricas quantitativas, visualizar os resultados obtidos nos experimentos. Como o processo de avalia&#xE7;&#xE3;o das imagens pode ser supervisionado ou n&#xE3;o, esta interface foi dividida em duas sub-interfaces, uma para analisar o experimentos com feedback supervisionado e outro para os experimentos de feedback n&#xE3;o supervisionado. Ambos possuem as mesmas funcionalidades, mas permitem avaliar de forma separada os resultados gerados por cada tipo de avalia&#xE7;&#xE3;o.</p>
+<p>O funcionamento desta interface &#xE9; bastante simples, inicialmente, &#xE9; necessario selecionar qual o tipo de avalia&#xE7;&#xE3;o deseja-se analisar, em seguida, &#xE9; preciso selecionar as m&#xE9;tricas de avalia&#xE7;&#xE3;o e os arquivos de teste que ser&#xE3;o utilizados. A partir disso, o sistema se encarrega de analisar os resultados e gerar os graficos.</p>
+<ul>
+<li>
+<p>Para realizar a analise pode-se selecionar todos os arquivos de testes ou selecionar manualmente somente aqueles que se deseja.<br>
+<br></p>
+</li>
+<li>
+<p>Ap&#xF3;s gerar os gr&#xE1;ficos, o sistema permite que todos eles seja exportados. Para isso basta clicar no bot&#xE3;o &quot;Save Analysis&quot; e, informar o local para o qual as imagens deve ser exportadas. Todos os gr&#xE1;ficos seram salvos em formato PNG.<br>
+<br></p>
+</li>
+<li>
+<p>O sistema permite que todos os arquivos de teste e scripts sejam copiados e, fornece uma funcionalidade de copia. Para acessa-l&#xE1;, basta ir em  <strong>options -&gt; copy test file</strong> e informar o local para onde os arquivos devem ser copiados.</p>
+</li>
+</ul>
+<p><strong>2.10 Using External Features:</strong></p>
+<p>Todas as caracteriticas geradas externamente que est&#xE3;o disponiveis ao sistema, ir&#xE3;o aparecer com a palavra &quot;Self&quot; antes do nome do extrator de caracterticas, por exemplo: &quot;Self - Color_Histogram&quot;. Como, essas caracteristicas foram geradas externamente, para utilizar imagens de consulta que n&#xE3;o fazem parte do dataset &#xE9; necessario informar ao sistema, manualmente, as caracteristicas daquela imagem de consulta.</p>
+<ul>
+<li>
+<p>Os modulos Exploratorio e de Experimentos: Feedback Supervisionado, ir&#xE3;o exibir uma janela solicitando as caracteristicas da imagem de consulta atual. Espera-se uma &#xFA;nica linha, contendo as caracteristicas separadas por &quot;;&quot;.</p>
+</li>
+<li>
+<p>O modulo de Experimentos: Feedback n&#xE3;o Supervisionado, permite que essas caracteriticas sejam informadas durante a sele&#xE7;&#xE3;o manual. Neste caso, &#xE9; necessario selecionar um arquivo, que contem o caminho para cada uma das imagens de consulta, e, abaixo de cada nome, devem estar as caracteristicas daquela imagem. Novamente separadas por &quot;;&quot;</p>
+</li>
+</ul>
+<h3 class="mume-header" id="3-additional-information-and-legal-note">3. Additional Information and Legal Note</h3>
+
+<p>O arquivo bin&#xE1;rio de demonstra&#xE7;&#xE3;o est&#xE1; sob as restri&#xE7;&#xF5;es GPLv2 devido ao uso gratuito dos requisitos do <a href="http://openjdk.java.net/legal/">Java</a>.</p>
+<p>Este repositorio cont&#xE9;m uma demonstra&#xE7;&#xE3;o, quaisquer garantias expressas ou impl&#xED;citas, incluindo, sem limita&#xE7;&#xE3;o, as garantias impl&#xED;citas de comerciabilidade e adequa&#xE7;&#xE3;o a uma finalidade espec&#xED;fica s&#xE3;o renunciadas. Em nenhuma circunst&#xE2;ncia os autores deste software ou seus contribuidores ser&#xE3;o respons&#xE1;veis por quaisquer danos diretos, indiretos, incidentais, especiais, exemplares ou conseq&#xFC;enciais (incluindo, mas n&#xE3;o se limitando a, aquisi&#xE7;&#xE3;o de bens ou servi&#xE7;os substitutivos, perda de uso, dados ou lucros, ou interrup&#xE7;&#xE3;o de neg&#xF3;cios), por&#xE9;m causados e em qualquer teoria de responsabilidade no contrato, responsabilidade objetiva ou ato il&#xED;cito (incluindo neglig&#xEA;ncia ou de outra forma) que surja de qualquer forma no uso desta demonstra&#xE7;&#xE3;o, mesmo se avisado da possibilidade de tal dano.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
