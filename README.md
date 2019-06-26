@@ -19,7 +19,7 @@ Despite the authors' efforts to release the prototypes without errors, there may
 
 EDA was developed for Linux-based systems. The installation process described below has been tested on a [Ubuntu 18.04](http://releases.ubuntu.com/18.04/), For other distributions based on Ubuntu the operation may be similar, but it may be necessary to install some packages manually and, to date, other Linux distributions have not been tested.
 
-  ![Main](./Figures/Main.png)
+  ![Main](./Main.png)
 
   The following [video](http://youtube.com)  generically presents the system features.
 
