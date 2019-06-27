@@ -201,7 +201,6 @@ The operation of this interface is quite simple, initially, it is necessary to s
 
 All the externally generated features that are available to the system will appear with the word "Self" before the character extractor name, for example: "Self - Color_Histogram". As these characteristics were generated externally, to use query images that are not part of the dataset, it is necessary to inform the system, manually, the characteristics of that query image. Whenever this occurs, the Exploratory and Experiments: Supervised Feedback modules will display a window requesting the characteristics of the current query image. A single line is expected, containing the characteristics separated by ";". The Experiments: Unsupervised Feedback module allows these features to be informed during manual selection. In this case, it is necessary to select a file, which contains the path for each of the query images, and the characteristics of that image, again, separated by ";". [Here is an example](./Self_Features) of the format of this file.
 
-
 ### 3. Additional Information and Legal Note ####
 
 The demonstration binary file is under GPLv2 restrictions due to free use of [Java](http://openjdk.java.net/legal/) requirements.
