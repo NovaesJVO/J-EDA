@@ -8,9 +8,6 @@ It has been implemented in [Java](https://www.oracle.com/technetwork/pt/java/jav
 
 Despite the authors' efforts to release the prototypes without errors, there may be some problems. If you encounter any problems or wish to add new features, please contact us.
 
-**Quote**: If you download or use EDA for technical tests or anilis, we ask that you include the following reference:
-
-* Novaes, J.V.O; Santos, L. F. D; Traina, A.; Traina Jr., C; Bedo, M. V. N. SBBD 2019 Proceedings Satellite Events of the 34th Brazilian Symposium on Databases (SBBD) 2019: Pagina_Inicio-Pagina_Fim. Ceará, Brazil, October 7-10, 2019.
 
 ### 1. Minimum requirements ###
 
