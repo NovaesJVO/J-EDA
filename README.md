@@ -49,10 +49,10 @@ EDA was developed for Linux-based systems. The installation process described be
     ├── Main.png
     ├── README.md
     ├── run.sh
-    ├── Script.txt
+    ├── Script_Model.txt
     └── Self_Features.txt
 
-3 directories, 13 files
+3 directories, 12 files
 ```
 **2.2 Run**
   The run file is run.sh. Initially it is necessary to make this file an execult, for this use the command: chmod + x run.sh and to execute use: ./run.sh.
