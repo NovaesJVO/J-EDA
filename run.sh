@@ -1,5 +1,5 @@
 #!/bin/bash
- 
+
 for i in {libdc1394-22,libjasper1,libjasper-dev,libavcodec57,libavformat57,libswscale4,execstack};
  do
    var=`dpkg --get-selections | grep $i`

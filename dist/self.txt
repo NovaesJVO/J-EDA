@@ -1,0 +1,2 @@
+Corel1000%->%1
+ColorHistogram%->%/home/jvictor/Imagens/Datasets/Corel1000/test1/image.orig;/home/jvictor/Dropbox/EDA/Corel_Colorhist.txt
