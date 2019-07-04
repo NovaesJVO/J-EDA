@@ -1,4 +1,4 @@
-# The EDA Project #
+# The EDA System #
 
 **Attention**: EDA is **not** clinical or commercial software. It is designed for educational and demonstration purposes.
 
@@ -185,7 +185,9 @@ This interface allows, through quantitative metrics, to visualize the results ob
 
 The operation of this interface is quite simple, initially, it is necessary to select which type of evaluation you wish to analyze, then you need to select the evaluation metrics and the test files that will be used. From there, the system is in charge of analyzing the results and generating the graphs.
 
-* To perform the analysis you can select all the test files or select only those that you want manually. 
+* To perform the analysis you can select all the test files or select only those that you want manually.
+
+* If the Precion x Recall and/or Average Recall metrics have been selected, it will be necessary to enter the image number in each class of the dataset.
 
 * After generating the graphics, the system allows all of them to be exported. To do this simply click on the "Save Analysis" button and inform the location where the images should be exported. All graphics will be saved in PNG format.
 
