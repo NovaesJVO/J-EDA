@@ -31,8 +31,6 @@ Although the steps are similar for other distributions, it may be necessary to i
 
   ![Main](./Main.png)
 
-The following [Youtube video](http://youtube.com) demonstrates J-EDA main features.
-
 **2.1 Download**
 
 * Clone or download this project.
@@ -103,8 +101,13 @@ The following list describes the expected set of parameters to be used by each a
 
 * Range Query (Rq): It receives a number e > 0 that indicates the maximum distance threshold.
 
+### 3. Usage Demonstration Video ####
 
-### 3. Additional Information and Legal Note ####
+![YoutubeMain](./YoutubeMain.jpg)
+
+The following [Youtube video](https://youtu.be/K0lDmfTeOZ0) demonstrates J-EDA main features.
+
+### 4. Additional Information and Legal Note ####
 
 The demonstration binary file is under GPLv2 restrictions due to free use of [JAVA](http://openjdk.java.net/legal/) requirements.
 
