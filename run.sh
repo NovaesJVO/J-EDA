@@ -17,6 +17,7 @@ for i in {libdc1394-22,libjasper1,libjasper-dev,libavcodec57,libavformat57,libsw
 		        echo "Packages successfully installed."
 			
 		    else
+			echo ""
 		        echo "Packages have not been installed."
 			return
 		    fi
@@ -27,6 +28,10 @@ for i in {libdc1394-22,libjasper1,libjasper-dev,libavcodec57,libavformat57,libsw
 	fi
  done
 
+echo "Starting the J-EDA"
+
 cd dist
-java -Djava.library.path=../lib -jar Projeto.jar
+java -Djava.library.path=../lib -jar J-EDA.jar 
+
+
 
