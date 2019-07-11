@@ -60,8 +60,8 @@ Although the steps are similar for other distributions, it may be necessary to i
 
 **2.2 Running experience**
 
-J-EDA binary file is run.sh. 
-Grant it permission by using the command chmod + x run.sh and execute with command sudo ./run.sh.
+J-EDA binary file is run.sh.
+Grant it permission by using the command chmod + x run.sh and execute with command ./run.sh.
 
 List of packages required by J-EDA:
   * libjasper1 
